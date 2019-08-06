@@ -350,3 +350,42 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+#img-container {
+  position: relative;
+}
+#img-container div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+#img-container div:hover {
+  display: default;
+  background-color: white;
+  opacity: 0.8;
+}
+#img-container div p {
+  display: flex;
+  font-family: 'Indie Flower', cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 1s;
+  align-content: center;
+  height: 100%;
+}
+#img-container div p:hover {
+  opacity: 0.8;
+}
+.logo-heading.hover {
+  background-color: black;
+  color: white;
+}
