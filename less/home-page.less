@@ -112,3 +112,45 @@
     }
   }
 }// home
+
+#img-container {
+  position:relative;
+}
+
+#img-container div {
+  position: absolute;
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  align-items:center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  transition: 1s;
+  &:hover {
+    display:default;
+    background-color: white;
+    opacity: .8;
+  }
+  p {
+    display:flex;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    font-size:2.0rem;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition: 1s;
+    align-content: center;
+    height: 100%;
+    &:hover {
+      opacity:.8;
+    }
+  }
+}
+.logo-heading.hover{
+  background-color:black;
+  color:white;
+}
