@@ -59,6 +59,17 @@ nav.addEventListener("click", (event) => {
     event.target.style.border = "2px solid red";
 })
 
+let pTags = document.querySelectorAll("p");
+pTags.forEach((p) => {
+    p.addEventListener("mouseover", (event) => {
+        TweenLite.to(event.target, 1, {scale:1.5, backgroundColor:"blue", color:"white",borderRadius:"10px"});
+    });
+    p.addEventListener("mouseleave", (event) => {
+        TweenLite.to(event.target,1,{scale:1.0, backgroundColor:"none",color:"black"});
+    });
+});
+
+// Helper Functions
 function resetPage(){
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "black";
